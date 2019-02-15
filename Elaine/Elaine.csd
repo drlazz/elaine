@@ -625,7 +625,7 @@ nslider bounds(437, 316, 16, 16), channel("LFO2AmountADSR"), range(0, 5, 0, 1, 1
 image bounds(342, 342, 423, 118), plant("MODULATOR"), colour(0, 0, 0, 0), outlinethickness(1)  {
 
 image bounds(0, 0, 138, 118), plant("MODULATOR1"), colour(0, 0, 0, 0),{
-label bounds(6, 4, 98, 13), text("AR MODULATOR"), fontcolour(152, 165, 171, 255)
+label bounds(6, 6, 70, 13), text("AM/RM/FM"), fontcolour(152, 165, 171, 255)
 label bounds(6, 28, 20, 13), text("AM"), fontcolour(152, 165, 171, 255)
 label bounds(6, 74, 20, 13), text("RM"), fontcolour(152, 165, 171, 255)
 
