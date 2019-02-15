@@ -20,6 +20,6 @@ INSTRUCCIONES DE INSTALACIÓN
 
 PROBLEMAS CON LA EJECUCIÓN
 
-- Si tras la ejecución no se muestra nada en pantalla, probar en una ruta que no sea archivos de programa (por ejemplo, Documentos).
+- Si tras la ejecución no se muestra nada en pantalla, probar a instalar en una ruta que no sea archivos de programa (por ejemplo, Documentos).
 
 - Si el problema persiste, ejecutar a traves de la carpeta <ruta_instalacion>/Cabbage/CabbageLite.exe, una vez   abierto, marcar Options -> Open Csound file, y abrir el archivo Elaine.csd ubicado en <ruta_instalacion>/Elaine
