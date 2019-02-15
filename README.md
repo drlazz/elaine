@@ -18,7 +18,7 @@ INSTRUCCIONES DE INSTALACIÓN
 
 - Marcar la opción para añadir la aplicación a las variables de entorno.
 
-PROBLEMAS CON LA EJECUCION
+PROBLEMAS CON LA EJECUCIÓN
 
 - Si tras la ejecución no se muestra nada en pantalla, probar en una ruta que no sea archivos de programa (por ejemplo, Documentos).
 
