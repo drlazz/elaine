@@ -1,4 +1,4 @@
-# elaine
+# Elaine
 Elaine is a free hybrid synthesizer made with Csound and Cabbage. / Elaine es un sintetizador híbrido gratuito desarrollado mediante Csound y Cabbage.
 
 
