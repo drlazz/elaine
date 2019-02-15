@@ -2,6 +2,12 @@
 Elaine is a free hybrid synthesizer made with Csound and Cabbage.
 
 
+
+
+
+
+
+
 INSTRUCCIONES DE INSTALACIÓN
 
 - Ejecutar el archivo ElaineSetup64.exe en la ruta deseada. 
