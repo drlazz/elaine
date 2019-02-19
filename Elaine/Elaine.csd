@@ -4159,7 +4159,7 @@ instr 101 ; Modulo arpegiador
                     kOctCounter=0
                 endif
                 
-                kArpPitch pow 1.05964, kPitch[kArpStepCounter-1]
+                kArpPitch = kPitch[kArpStepCounter-1]
                 
                 if gkNotes[kPlayNote]!=200 then
                     event "i", 1, 0, kArpGate/kArpRate, gkNotes[(kLen2-1)-kPlayNote], 2, kVel[kArpStepCounter-1], kArpPitch+12*kOctCounter          
@@ -4178,7 +4178,7 @@ instr 101 ; Modulo arpegiador
                     kOctCounter=0
                 endif
                 
-                kArpPitch pow 1.05964, kPitch[kArpStepCounter-1]
+                kArpPitch = kPitch[kArpStepCounter-1]
                 
                 if kPlayNote<=(kLen2-1) then
                 
