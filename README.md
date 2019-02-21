@@ -11,8 +11,9 @@ Elaine is a free hybrid synthesizer made with Csound and Cabbage. / Elaine es un
 
 - Marcar la opción para añadir la aplicación a las variables de entorno.
 
-# Problemas con la ejecución
+# Problemas detectados con la ejecución
 
-- Si tras la ejecución no se muestra nada en pantalla, probar a instalar en una ruta que no sea archivos de programa (por ejemplo, Documentos).
+- Si el programa no se ejecuta correctamente (no se muestra nada en pantalla), abrir el video "RunProblems" y seguir indicaciones.
 
-- Si el problema persiste, ejecutar a traves de la carpeta <ruta_instalacion>/Cabbage/CabbageLite.exe, una vez   abierto, marcar Options -> Open Csound file, y abrir el archivo Elaine.csd ubicado en <ruta_instalacion>/Elaine
+- Si el programa emite sonido de salida pero no funciona ninguna de las monitorizaciones del módulo principal, ni se actualizan los display al cambiar de forma de onda o al modificar los parámetros ADSR de una envolvente, puede ser debido a algún problema con el controlador de sonido. Se ha verificado el funcionamiento correcto con ASIO4ALL y con los controladores de la Focusrite Scarlet 2i4. Por otro lado, los problemas se han obtenido al utilizar los controladores nativos de Windows y DirectSound.
+
