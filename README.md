@@ -14,7 +14,7 @@ Elaine is a free hybrid synthesizer made with Csound and Cabbage. / Elaine es un
 
 # Problems detected with running
 
-- If the program does not run correctly (nothing is shown on the screen), open the "RunProblems" video and follow instructions.
+- If the program does not run correctly (nothing is shown on the screen), open the "RunFix" video and follow instructions.
 
 - If the program emits output sound but none of the monitoring of the main module works, or the displays are not updated when changing the waveform or when modifying the ADSR parameters of an envelope, it may be due to a problem with the sound controller. Correct behaviour has been verified with ASIO4ALL and Focusrite Scarlet 2i4 drivers. Bad behaviour have occurred when using the native Windows and DirectSound drivers.
 
@@ -30,7 +30,7 @@ Elaine is a free hybrid synthesizer made with Csound and Cabbage. / Elaine es un
 
 # Problemas detectados con la ejecución
 
-- Si el programa no se ejecuta correctamente (no se muestra nada en pantalla), abrir el video "RunProblems" y seguir indicaciones.
+- Si el programa no se ejecuta correctamente (no se muestra nada en pantalla), abrir el video "RunFix" y seguir indicaciones.
 
 - Si el programa emite sonido de salida pero no funciona ninguna de las monitorizaciones del módulo principal, ni se actualizan los display al cambiar de forma de onda o al modificar los parámetros ADSR de una envolvente, puede ser debido a algún problema con el controlador de sonido. Se ha verificado el funcionamiento correcto con ASIO4ALL y con los controladores de la Focusrite Scarlet 2i4. Por otro lado, los problemas se han dado al utilizar los controladores nativos de Windows y DirectSound.
 
