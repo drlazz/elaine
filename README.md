@@ -12,6 +12,12 @@ Elaine is a free hybrid synthesizer made with Csound and Cabbage. / Elaine es un
 
 - Check "add application directory to your PATH environment variable".
 
+# Problems detected with running
+
+- If the program does not run correctly (nothing is shown on the screen), open the "RunProblems" video and follow instructions.
+
+- If the program emits output sound but none of the monitoring of the main module works, or the displays are not updated when changing the waveform or when modifying the ADSR parameters of an envelope, it may be due to a problem with the sound controller. Correct behaviour has been verified with ASIO4ALL and Focusrite Scarlet 2i4 drivers. Bad behaviour have occurred when using the native Windows and DirectSound drivers.
+
 # Instrucciones de instalación
 
 - Abrir el archivo "ElaineSetup64.exe" ubicado en Output y descargarlo (sin usar botón derecho + descargar). Después ejecutar. 
@@ -21,12 +27,6 @@ Elaine is a free hybrid synthesizer made with Csound and Cabbage. / Elaine es un
 - Marcar "VST 64 Bits" si se desea utilizar como instrumento VST.
 
 - Marcar la opción para añadir la aplicación a las variables de entorno.
-
-# Problems detected with running
-
-- If the program does not run correctly (nothing is shown on the screen), open the "RunProblems" video and follow instructions.
-
-- If the program emits output sound but none of the monitoring of the main module works, or the displays are not updated when changing the waveform or when modifying the ADSR parameters of an envelope, it may be due to a problem with the sound controller. Correct behaviour has been verified with ASIO4ALL and Focusrite Scarlet 2i4 drivers. Bad behaviour have occurred when using the native Windows and DirectSound drivers.
 
 # Problemas detectados con la ejecución
 
