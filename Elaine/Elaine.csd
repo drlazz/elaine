@@ -210,7 +210,7 @@ label bounds(3, 57, 15, 12), text("10")
 label bounds(3, 87, 15, 12), text("11")
 label bounds(3, 117, 15, 12), text("12")
   
-rslider bounds(20, 20, 29, 29), channel("Add9lev"),  range(0, 1, 0.7, 1, 0.05), imgfile("Background", "SVG\knob4back.svg"), trackercolour(210, 180, 140, 255), textcolour(255, 255, 255, 255) increment(0.05) value(0.7)
+rslider bounds(20, 20, 29, 29), channel("Add9lev"),  range(0, 1, 0.7, 1, 0.05), imgfile("Background", "SVG\knob4back.svg"), trackercolour(210, 180, 140, 255), textcolour(255, 255, 255, 255)  value(0.7)
 
 rslider bounds(94, 22, 25, 25), channel("Add9A"), range(0, 1, 0.002, 1, 0.001), imgfile("Background", "SVG\knob4back.svg"), value(0.002)
 rslider bounds(122, 22, 25, 25), channel("Add9D"), range(0.001, 2, 0.4, 1, 0.001), imgfile("Background", "SVG\knob4back.svg") value(0.4)
@@ -240,10 +240,10 @@ rslider bounds(178, 112, 25, 25), channel("Add12R"), range(0.001, 3, 0.3, 1, 0.0
 
 }
 }
-button bounds(910, 160, 20, 15), active(1), channel("AddAct"), colour:1(90, 185, 87, 255),colour:0(0, 0, 0, 0), text("On")
-button bounds(930, 160, 16, 15), active(1), channel("AddButton1"), colour:1(0, 0, 0, 0),colour:0(0, 0, 0, 0), text("1")
-button bounds(946, 160, 16, 15), active(1), channel("AddButton2"), colour:1(0, 0, 0, 0),colour:0(0, 0, 0, 0), text("2")
-button bounds(962, 160, 16, 15), active(1), channel("AddButton3"), colour:1(0, 0, 0, 0),colour:0(0, 0, 0, 0), text("3")
+button bounds(910, 160, 20, 11), active(1), channel("AddAct"), colour:1(90, 185, 87, 255),colour:0(0, 0, 0, 0), text("On")
+button bounds(930, 160, 16, 13), , channel("AddButton1"), colour:1(0, 0, 0, 0),colour:0(0, 0, 0, 0), text("1", "1")
+button bounds(946, 160, 16, 13), active(1), channel("AddButton2"), colour:1(0, 0, 0, 0),colour:0(0, 0, 0, 0), text("2")
+button bounds(962, 160, 16, 13), active(1), channel("AddButton3"), colour:1(0, 0, 0, 0),colour:0(0, 0, 0, 0), text("3")
 
 rslider bounds(980, 178, 28, 28), channel("AddGain"),  range(-12, 12, 0, 1, 0.05), colour(255, 255, 255, 255), imgfile("Background", "SVG\knob4back.svg") increment(0.05)
 label bounds(979, 207, 30, 10), text("Gain")
@@ -273,8 +273,8 @@ nslider bounds(820, 276, 38, 14), channel("Add12Ratio"), identchannel("ADD12_RAT
 
 image bounds(500, 158, 265, 180), plant("ARPEGGIATOR"), colour(0, 0, 0, 0), , outlinethickness(1),  {
 label bounds(4, 4, 99, 13), text("ARPEGGIATOR"), fontcolour(152, 165, 171, 255) fontcolour(152, 165, 171, 255)
-button bounds(103, 4, 20, 15), , channel("ArpeggiatorAct"), text("On", "On"), colour:1(90, 185, 87, 255)
-button bounds(122, 4, 25, 15), , channel("ArpHold"), text("Hold", "Hold"), colour:1(90, 185, 87, 255)
+button bounds(103, 5, 20, 11), , channel("ArpeggiatorAct"), text("On", "On"), colour:1(90, 185, 87, 255)
+button bounds(122, 5, 25, 11), , channel("ArpHold"), text("Hold", "Hold"), colour:1(90, 185, 87, 255)
 
 rslider bounds(186, 14, 29, 29), channel("ArpRate"),range(1, 10, 4, 1, 0.1), imgfile("Background", "SVG\knob4back.svg"), trackercolour(0, 0, 0, 0) increment(0.1) value(4)
 rslider bounds(222, 14, 29, 29), channel("ArpGate"),range(0.01, 1, 0.7, 1, 0.01), imgfile("Background", "SVG\knob4back.svg"), trackercolour(0, 0, 0, 0) increment(0.01) value(0.7)
@@ -359,7 +359,7 @@ rslider bounds(18, 50, 29, 29), channel("D1"),range(0.001, 2, 0.4, 1, 0.001), im
 rslider bounds(18, 80, 29, 29), channel("S1"), range(0.001, 1, 1, 1, 0.001), imgfile("Background", "SVG\knob4back.svg"), trackercolour(0, 0, 0, 0) value(1)
 rslider bounds(18, 110, 29, 29), channel("R1"), range(0.001, 3, 0.3, 1, 0.001), imgfile("Background", "SVG\knob4back.svg"), trackercolour(0, 0, 0, 0) 
 gentable bounds(52, 20, 183, 115), identchannel("ADSR1_Shape_ID"), tablenumber(300.00000000000000000000), amprange(-0.04000000000000000000, 1.10000002384185791016, 300.00000000000000000000, 0.0100), active(1), fill(0), tablecolour:0(64, 224, 208, 255)
-button bounds(130, 5, 25, 14), channel("ADSR1Type"), text("Exp", "Lin"), colour:1(106, 106, 106, 255), colour:0(106, 106, 106, 255), value(1) 
+button bounds(130, 5, 25, 12), channel("ADSR1Type"), text("Exp", "Lin"), colour:1(106, 106, 106, 255), colour:0(106, 106, 106, 255), value(1) 
 }
 image bounds(0, 0, 241, 148), plant("ADSR2"), identchannel("ADSR2"), colour(0, 0, 0, 0), , outlinethickness(1), visible(0){
 label bounds(4, 4, 80, 13), text("ENVELOPE 2"), fontcolour(152, 165, 171, 255)
@@ -368,7 +368,7 @@ rslider bounds(18, 50, 29, 29), channel("D2"),range(0.001, 2, 0.4, 1, 0.001), im
 rslider bounds(18, 80, 29, 29), channel("S2"), range(0.001, 1, 1, 1, 0.001), imgfile("Background", "SVG\knob4back.svg"), trackercolour(0, 0, 0, 0)
 rslider bounds(18, 110, 29, 29), channel("R2"), range(0.001, 3, 0.3, 1, 0.001), imgfile("Background", "SVG\knob4back.svg"), trackercolour(0, 0, 0, 0)
 gentable bounds(52, 20, 183, 115), identchannel("ADSR2_Shape_ID"), tablenumber(301.00000000000000000000), amprange(-0.04000000000000000000, 1.10000002384185791016, 301.00000000000000000000, 0.0100), active(1), fill(0), tablecolour:0(64, 224, 208, 255)
-button bounds(130, 5, 25, 14), channel("ADSR2Type"), text("Exp", "Lin"), colour:1(106, 106, 106, 255), colour:0(106, 106, 106, 255), value(1) 
+button bounds(130, 5, 25, 12), channel("ADSR2Type"), text("Exp", "Lin"), colour:1(106, 106, 106, 255), colour:0(106, 106, 106, 255), value(1) 
 }
 image bounds(0, 0, 241, 148), plant("ADSR3"), identchannel("ADSR3"), colour(0, 0, 0, 0), , outlinethickness(1), visible(0){
 label bounds(4, 4, 80, 13), text("ENVELOPE 3"), fontcolour(152, 165, 171, 255)
@@ -377,7 +377,7 @@ rslider bounds(18, 50, 29, 29), channel("D3"),range(0.001, 2, 0.4, 1, 0.001), im
 rslider bounds(18, 80, 29, 29), channel("S3"), range(0.001, 1, 1, 1, 0.001), imgfile("Background", "SVG\knob4back.svg"), trackercolour(0, 0, 0, 0) value(1)
 rslider bounds(18, 110, 29, 29), channel("R3"), range(0.001, 3, 0.3, 1, 0.001), imgfile("Background", "SVG\knob4back.svg"), trackercolour(0, 0, 0, 0) 
 gentable bounds(52, 20, 183, 115), identchannel("ADSR3_Shape_ID"), tablenumber(302.00000000000000000000), amprange(-0.04000000000000000000, 1.10000002384185791016, 302.00000000000000000000, 0.0100), active(1), fill(0), tablecolour:0(64, 224, 208, 255)
-button bounds(130, 5, 25, 14), channel("ADSR3Type"), text("Exp", "Lin"), colour:1(106, 106, 106, 255), colour:0(106, 106, 106, 255), value(1) 
+button bounds(130, 5, 25, 12), channel("ADSR3Type"), text("Exp", "Lin"), colour:1(106, 106, 106, 255), colour:0(106, 106, 106, 255), value(1) 
 
 }
 image bounds(0, 0, 241, 148), plant("ADSR4"), identchannel("ADSR4"), colour(0, 0, 0, 0), , outlinethickness(1), visible(0){
@@ -387,7 +387,7 @@ rslider bounds(18, 50, 29, 29), channel("D4"),range(0.001, 2, 0.4, 1, 0.001), im
 rslider bounds(18, 80, 29, 29), channel("S4"), range(0.001, 1, 1, 1, 0.001), imgfile("Background", "SVG\knob4back.svg"), trackercolour(0, 0, 0, 0) value(1)
 rslider bounds(18, 110, 29, 29), channel("R4"), range(0.001, 3, 0.3, 1, 0.001), imgfile("Background", "SVG\knob4back.svg"), trackercolour(0, 0, 0, 0)
 gentable bounds(52, 20, 183, 115), identchannel("ADSR4_Shape_ID"), tablenumber(303.00000000000000000000), amprange(-0.04000000000000000000, 1.10000002384185791016, 303.00000000000000000000, 0.0100), active(1), fill(0), tablecolour:0(64, 224, 208, 255)
-button bounds(130, 5, 25, 14), channel("ADSR4Type"), text("Exp", "Lin"), colour:1(106, 106, 106, 255), colour:0(106, 106, 106, 255), value(1) 
+button bounds(130, 5, 25, 12), channel("ADSR4Type"), text("Exp", "Lin"), colour:1(106, 106, 106, 255), colour:0(106, 106, 106, 255), value(1) 
 
 }
 image bounds(0, 0, 241, 148), plant("ADSR5"), identchannel("ADSR5"), colour(0, 0, 0, 0), , outlinethickness(1), visible(0){
@@ -397,15 +397,15 @@ rslider bounds(18, 50, 29, 29), channel("D5"),range(0.001, 2, 0.4, 1, 0.001), im
 rslider bounds(18, 80, 29, 29), channel("S5"), range(0.001, 1, 1, 1, 0.001), imgfile("Background", "SVG\knob4back.svg"), trackercolour(0, 0, 0, 0) value(1)
 rslider bounds(18, 110, 29, 29), channel("R5"), range(0.001, 3, 0.3, 1, 0.001), imgfile("Background", "SVG\knob4back.svg"), trackercolour(0, 0, 0, 0)
 gentable bounds(52, 20, 183, 115), identchannel("ADSR5_Shape_ID"), tablenumber(304.00000000000000000000), amprange(-0.04000000000000000000, 1.10000002384185791016, 304.00000000000000000000, 0.0100), active(1), fill(0), tablecolour:0(64, 224, 208, 255)
-button bounds(130, 5, 25, 14), channel("ADSR5Type"), text("Exp", "Lin"), colour:1(106, 106, 106, 255), colour:0(106, 106, 106, 255), value(1) 
+button bounds(130, 5, 25, 12), channel("ADSR5Type"), text("Exp", "Lin"), colour:1(106, 106, 106, 255), colour:0(106, 106, 106, 255), value(1) 
 
 }
 }
-button bounds(504, 10, 15, 15), channel("ADSR1Act"), colour:1(0, 0, 0, 0), colour:0(0, 0, 0, 0),text("1", "1")
-button bounds(518, 10, 15, 15), channel("ADSR2Act"), colour:1(0, 0, 0, 0), colour:0(0, 0, 0, 0),text("2", "2")
-button bounds(532, 10, 15, 15), channel("ADSR3Act"), colour:1(0, 0, 0, 0), colour:0(0, 0, 0, 0),text("3", "3")
-button bounds(546, 10, 15, 15), channel("ADSR4Act"), colour:1(0, 0, 0, 0), colour:0(0, 0, 0, 0),text("4", "4")
-button bounds(560, 10, 15, 15), channel("ADSR5Act"), colour:1(0, 0, 0, 0), colour:0(0, 0, 0, 0),text("5", "5")
+button bounds(504, 10, 15, 13), channel("ADSR1Act"), colour:1(0, 0, 0, 0), colour:0(0, 0, 0, 0),text("1", "1")
+button bounds(518, 10, 15, 13), channel("ADSR2Act"), colour:1(0, 0, 0, 0), colour:0(0, 0, 0, 0),text("2", "2")
+button bounds(532, 10, 15, 13), channel("ADSR3Act"), colour:1(0, 0, 0, 0), colour:0(0, 0, 0, 0),text("3", "3")
+button bounds(546, 10, 15, 13), channel("ADSR4Act"), colour:1(0, 0, 0, 0), colour:0(0, 0, 0, 0),text("4", "4")
+button bounds(560, 10, 15, 13), channel("ADSR5Act"), colour:1(0, 0, 0, 0), colour:0(0, 0, 0, 0),text("5", "5")
 
 
 
@@ -464,7 +464,7 @@ checkbox bounds(134, 58, 13, 13), channel("Filter1Type3"), colour:1(90, 185, 87,
 
 checkbox bounds(92, 28, 13, 13), channel("Filt1Path1"), identchannel("FILTER1_TYPE1_ID"), colour:1(90, 185, 87, 255), shape("circle")
 checkbox bounds(92, 50, 13, 13), channel("Filt1Path2"), identchannel("FILTER1_TYPE2_ID"), colour:1(90, 185, 87, 255), shape("circle")
-button bounds(70, 5, 25, 14), channel("Filt1EnvType"), text("Exp", "Lin"), colour:1(106, 106, 106, 255), colour:0(106, 106, 106, 255)
+button bounds(70, 5, 25, 12), channel("Filt1EnvType"), text("Exp", "Lin"), colour:1(106, 106, 106, 255), colour:0(106, 106, 106, 255)
 
 }
 nslider bounds(720, 24, 16, 16),  channel("Filt1dbOct"), identchannel("FILTER1_ORDER_ID"), range(1, 4, 2, 1, 1), velocity(1) increment(1) colour(50, 50, 50, 255) 
@@ -530,7 +530,7 @@ checkbox bounds(134, 58, 13, 13), channel("Filter2Type3"), colour:1(90, 185, 87,
 
 checkbox bounds(92, 26, 13, 13), channel("Filt2Path1"),text("B"), identchannel("FILTER2_TYPE1_ID"), colour:1(90, 185, 87, 255), shape("circle")
 checkbox bounds(92, 46, 13, 13), channel("Filt2Path2"),text("Filter 1"), identchannel("FILTER2_TYPE2_ID"), colour:1(90, 185, 87, 255), shape("circle")
-button bounds(70, 5, 25, 14), channel("Filt2EnvType"), text("Exp", "Lin"), colour:1(106, 106, 106, 255), colour:0(106, 106, 106, 255)
+button bounds(70, 5, 25, 12), channel("Filt2EnvType"), text("Exp", "Lin"), colour:1(106, 106, 106, 255), colour:0(106, 106, 106, 255)
 }
 
 image bounds(956, 8, 73, 53), plant("FILTER2LPOCT"), colour(0, 0, 0, 0), outlinethickness(1),outlinecolour(50,50,50,0),identchannel("PLANT_LP2OCT"){
@@ -604,7 +604,7 @@ image file("SVG\sawtooth_wave.svg"), identchannel("LFO2_WAVE2_ID"),bounds(127, 5
 image file("SVG\square_wave.svg"), identchannel("LFO2_WAVE3_ID"),bounds(127, 54, 12, 10), visible(0)
 image file("SVG\triangular_wave.svg"), identchannel("LFO2_WAVE4_ID"),bounds(127, 54, 10, 10), visible(0)
 
-button bounds(53, 4, 30, 13), channel("LFO2Locked"), colour:1(90, 185, 87, 255), text("Lock", "Lock")
+button bounds(52, 6, 30, 11), channel("LFO2Locked"), colour:1(90, 185, 87, 255), text("Lock", "Lock")
 }
 nslider bounds(350, 316, 16, 16), channel("LFO2RateMod"), range(0, 1, 0, 1, 1), velocity(1) increment(1) colour(94, 14, 14, 255)
 nslider bounds(364, 316, 16, 16), channel("LFO2RateADSR"), range(0, 5, 0, 1, 1), velocity(1) increment(1) colour(33, 65, 43, 255)
@@ -646,8 +646,8 @@ label bounds(88, 100, 16, 8), text("WF"), fontcolour(152, 165, 171, 255)
 label bounds(32, 54, 26, 8), text("Depth"), fontcolour(152, 165, 171, 255)
 label bounds(59, 54, 23, 8), text("Rate"), fontcolour(152, 165, 171, 255)
 label bounds(88, 54, 16, 8), text("WF"), fontcolour(152, 165, 171, 255)
-button bounds(6, 44, 20, 15), channel("AMAct"), text("On", "On"), colour:1(90, 185, 87, 255)
-button bounds(6, 90, 20, 15), channel("RMAct"), text("On", "On"), colour:1(90, 185, 87, 255)
+button bounds(6, 44, 20, 11), channel("AMAct"), text("On", "On"), colour:1(90, 185, 87, 255)
+button bounds(6, 90, 20, 11), channel("RMAct"), text("On", "On"), colour:1(90, 185, 87, 255)
 
 image bounds(114, 34, 14, 14), corners(2), colour(100, 100, 100, 100), outlinecolour(55, 52, 52, 255), outlinethickness(0.5) 
 image file("SVG\sine_wave.svg"), identchannel("AM_WAVE1_ID"), bounds(115, 36, 12, 10),
@@ -671,7 +671,7 @@ image file("SVG\sineharm_wave.svg"), identchannel("RM_WAVE2_ID"),bounds(115, 82,
 
 image bounds(135, 0, 297, 118), plant("FM"), colour(0, 0, 0, 0), ,  {
 ;label bounds(10, 16, 28, 13), text("FM"), fontcolour(152, 165, 171, 255)
-button bounds(10, 6, 28, 18), channel("FModType"), text("FM", "PM"), colour:1(106, 106, 106, 255), colour:0(106, 106, 106, 255), value(1) 
+button bounds(10, 6, 22, 12), channel("FModType"), text("FM", "PM"), colour:1(106, 106, 106, 255), colour:0(106, 106, 106, 255), value(1) 
 
 label bounds(60, 38, 32, 10), text("Ratio"),fontcolour(152, 165, 171, 255)
 label bounds(244, 38, 32, 10), text("Ratio"),fontcolour(152, 165, 171, 255)
@@ -688,7 +688,7 @@ label bounds(16, 24, 55, 11), text("Operator 1"),fontcolour(152, 165, 171, 255)
 label bounds(108, 24, 55, 11), text("Operator 2"),fontcolour(152, 165, 171, 255)
 label bounds(200, 24, 55, 11), text("Operator 3"),fontcolour(152, 165, 171, 255)
 
-button bounds(36, 6, 20, 15), channel("FMAct"), text("On", "On"), colour:1(90, 185, 87, 255)
+button bounds(36, 6, 20, 11), channel("FMAct"), text("On", "On"), colour:1(90, 185, 87, 255)
 
 rslider bounds(18, 38, 29, 29), channel("Op1Index"),  range(0, 15, 0, 1, 0.01), imgfile("Background", "SVG\knob4back.svg"), trackercolour(0, 0, 0, 0), increment(0.01)
 rslider bounds(110, 38, 29, 29) channel("Op2Index"),  range(0, 15, 0, 1, 0.01), imgfile("Background", "SVG\knob4back.svg"), trackercolour(0, 0, 0, 0) increment(0.01)
@@ -698,8 +698,8 @@ rslider bounds(67, 70, 17, 17),  channel("Op1Feedback"), identchannel("OP1_FEEDB
 rslider bounds(159, 70, 17, 17),  channel("Op2Feedback"), identchannel("OP2_FEEDBACK_ID"), range(0, 0.5, 0, 1, 0.01), imgfile("Background", "SVG\knob4back.svg"), increment(0.01) value(0)
 rslider bounds(251, 70, 17, 17),  channel("Op3Feedback"), identchannel("OP3_FEEDBACK_ID"), range(0, 1, 0, 1, 0.01), imgfile("Background", "SVG\knob4back.svg"), increment(0.01) value(0)
 
-button bounds(144, 92, 25, 15), channel("Op2Mode"), text("Osc", "Op"),colour:1(106, 106, 106, 255), colour:0(106, 106, 106, 255)
-button bounds(236, 92, 25, 15), channel("Op3Mode"), text("Osc", "Op"), colour:1(106, 106, 106, 255), colour:0(106, 106, 106, 255)
+button bounds(144, 93, 25, 12), channel("Op2Mode"), text("Osc", "Op"),colour:1(106, 106, 106, 255), colour:0(106, 106, 106, 255)
+button bounds(236, 93, 25, 12), channel("Op3Mode"), text("Osc", "Op"), colour:1(106, 106, 106, 255), colour:0(106, 106, 106, 255)
 
 }
 }
@@ -737,10 +737,10 @@ label bounds(303, 6, 14, 14), text("A")
 label bounds(303, 103, 14, 14), text("B")
 
 vslider bounds(293, 17, 34, 92), channel("Osc1Panner"), identchannel("OSC1_PAN_ID"), range(0, 1, 0.5, 1, 0.001), colour(70, 30, 0, 255), trackercolour(210, 180, 140, 255), textcolour(255, 255, 255, 255) value(0.5)
-rslider bounds(159, 74, 29, 29), channel("Osc1lev"), range(0, 1, 0.7, 1, 0.01),increment(0.01), value(0.7),imgfile("Background", "SVG\knob4back.svg"), trackercolour(0, 0, 0, 0),
-rslider bounds(229, 74, 29, 29), channel("WTcontrol1"), identchannel("OSC1_WTKNOB_ID"),range(0, 1, 0, 1, 0.01), textcolour(255, 255, 255, 255) increment(0.01), imgfile("Background", "SVG\knob4back.svg"), trackercolour(0, 0, 0, 0),
+rslider bounds(159, 74, 29, 29), channel("Osc1lev"), range(0, 1, 0.7, 1, 0.01),, value(0.7),imgfile("Background", "SVG\knob4back.svg"), trackercolour(0, 0, 0, 0),
+rslider bounds(229, 74, 29, 29), channel("WTcontrol1"), identchannel("OSC1_WTKNOB_ID"),range(0, 1, 0, 1, 0.01), textcolour(255, 255, 255, 255) , imgfile("Background", "SVG\knob4back.svg"), trackercolour(0, 0, 0, 0),
 rslider  bounds(195, 74, 29, 29), channel("PitchControl1"), range(-6, 6, 0, 1, 0.01), imgfile("Background", "SVG\knob4back.svg"), trackercolour(0, 0, 0, 0),
-rslider  bounds(262, 74, 29, 29), channel("Osc1oct"), range(-4, 4, 0, 1, 1)  colour(255, 255, 255, 255), imgfile("Background", "SVG\knob4back.svg"), trackercolour(0, 0, 0, 0), increment(1)
+rslider  bounds(262, 74, 29, 29), channel("Osc1oct"), range(-4, 4, 0, 1, 1)  colour(255, 255, 255, 255), imgfile("Background", "SVG\knob4back.svg"), trackercolour(0, 0, 0, 0), 
 
 label bounds(157, 105, 32, 11), text("Level"), fontcolour(152, 165, 171, 255) fontcolour(152, 165, 171, 255) fontcolour(152, 165, 171, 255) fontcolour(152, 165, 171, 255)
 label bounds(193, 105, 32, 11), text("Pitch"), fontcolour(152, 165, 171, 255) fontcolour(152, 165, 171, 255) fontcolour(152, 165, 171, 255) fontcolour(152, 165, 171, 255)
@@ -751,12 +751,12 @@ label bounds(163, 59, 25, 10), text("WF 1"), fontcolour(152, 165, 171, 255) font
 label bounds(197, 59, 25, 10), text("WF 2"), fontcolour(152, 165, 171, 255) fontcolour(152, 165, 171, 255) fontcolour(152, 165, 171, 255) fontcolour(152, 165, 171, 255)
 
 label bounds(228, 48, 60, 10), text("Pulse Width"), identchannel("OSC1_PWTEXT_ID"), fontcolour(152, 165, 171, 255), visible(0) fontcolour(152, 165, 171, 255) fontcolour(152, 165, 171, 255) fontcolour(152, 165, 171, 255)
-rslider  bounds(230, 26, 20, 20), channel("Osc1PW"), identchannel("OSC1_PWKNOB_ID"), range(0.1, 0.9, 0.5, 1, 0.01), imgfile("Background", "SVG\knob4back.svg"), trackercolour(0, 0, 0, 0), visible(0) increment(0.01) value(0.5)
+rslider  bounds(230, 26, 20, 20), channel("Osc1PW"), identchannel("OSC1_PWKNOB_ID"), range(0.1, 0.9, 0.5, 1, 0.01), imgfile("Background", "SVG\knob4back.svg"), trackercolour(0, 0, 0, 0), visible(0)  value(0.5)
 
-rslider  bounds(160, 26, 30, 30), channel("Osc1Wave"), range(1, 14, 1, 1, 1), colour(70, 70, 70, 255), imgfile("Background", "SVG\knob4back.svg"), trackercolour(0, 0, 0, 0), increment(1),outlinecolour(50, 50, 50, 255), value(1)
-rslider  bounds(194, 26, 30, 30), channel("WTOsc1Wave"), range(1, 14, 2, 1, 1), colour(70, 70, 70, 255), imgfile("Background", "SVG\knob4back.svg"), trackercolour(0, 0, 0, 0), increment(1) value(2)
+rslider  bounds(160, 26, 30, 30), channel("Osc1Wave"), range(1, 14, 1, 1, 1), colour(70, 70, 70, 255), imgfile("Background", "SVG\knob4back.svg"), trackercolour(0, 0, 0, 0), ,outlinecolour(50, 50, 50, 255), value(1)
+rslider  bounds(194, 26, 30, 30), channel("WTOsc1Wave"), range(1, 14, 2, 1, 1), colour(70, 70, 70, 255), imgfile("Background", "SVG\knob4back.svg"), trackercolour(0, 0, 0, 0),  value(2)
 
-gentable bounds(10, 26, 141, 112), tablenumber(201), identchannel("OUTOSC1_Shape_ID"), amprange(-1.3999999761581420898, 1.3999999761581420898, 201, 0.0010), fill(0), tablecolour:0(64, 224, 208, 255)
+gentable bounds(10, 26, 141, 112), tablenumber(2.01e2), identchannel("OUTOSC1_Shape_ID"), amprange(-1.399999976158142, 1.399999976158142, 2.01e2, 0.0010), fill(0), tablecolour:0(64, 224, 208, 255)
 
 image bounds(117, 26, 14, 14), corners(2), colour(100, 100, 100, 100), outlinecolour(55, 52, 52, 255) outlinethickness(0.5) linethickness(0.5)
 image bounds(133, 26, 14, 14), corners(2), colour(100, 100, 100, 100),  outlinethickness(0.5) linethickness(0.5)
@@ -793,7 +793,7 @@ label bounds(136, 28, 9, 9), identchannel("WTOSC1_WAVE12_ID"), text("6"),visible
 label bounds(136, 28, 9, 9), identchannel("WTOSC1_WAVE13_ID"), text("7"),visible(0)
 label bounds(136, 28, 9, 9), identchannel("WTOSC1_WAVE14_ID"), text("8"),visible(0)
 
-button bounds(105, 4, 20, 15), value(1), channel("Osc1act"), text("On", "On"), colour:1(90, 185, 87, 255)
+button bounds(105, 5, 21, 11), value(1), channel("Osc1act"), text("On", "On"), colour:1(90, 185, 87, 255)
 }
 
 nslider bounds(166, 128, 16, 16),  channel("Osc1LevMod"), range(0, 3, 0, 1, 1),, velocity(1) increment(1) colour(94, 14, 14, 255)
@@ -869,7 +869,7 @@ label bounds(136, 28, 9, 9), identchannel("WTOSC2_WAVE12_ID"), text("6"),visible
 label bounds(136, 28, 9, 9), identchannel("WTOSC2_WAVE13_ID"), text("7"),visible(0)
 label bounds(136, 28, 9, 9), identchannel("WTOSC2_WAVE14_ID"), text("8"),visible(0)
 
-button bounds(105, 4, 20, 15), , channel("Osc2act"), text("On", "On"), colour:1(90, 185, 87, 255)
+button bounds(105, 5, 21, 11), value(0), channel("Osc2act"), text("On", "On"), colour:1(90, 185, 87, 255)
 }
 
 nslider bounds(166, 282, 16, 16),  channel("Osc2LevMod"), range(0, 3, 0, 1, 1), velocity(1) increment(1) colour(94, 14, 14, 255)
@@ -946,7 +946,7 @@ label bounds(136, 28, 9, 9), identchannel("WTOSC3_WAVE12_ID"), text("6"),visible
 label bounds(136, 28, 9, 9), identchannel("WTOSC3_WAVE13_ID"), text("7"),visible(0)
 label bounds(136, 28, 9, 9), identchannel("WTOSC3_WAVE14_ID"), text("8"),visible(0)
 
-button bounds(105, 4, 20, 15), value(0), channel("Osc3act"), text("On"), colour:1(90, 185, 87, 255)
+button bounds(105, 5, 21, 11), value(0), channel("Osc3act"), text("On", "On"), colour:1(90, 185, 87, 255)
 }
 
 nslider bounds(168, 434, 16, 16),  channel("Osc3LevMod"), range(0, 3, 0, 1, 1), velocity(1) increment(1) colour(94, 14, 14, 255)
@@ -969,7 +969,7 @@ label bounds(2, 4, 44, 13), text("NOISE"), fontcolour(152, 165, 171, 255) fontco
 label bounds(44, 26, 13, 14), text("A")
 label bounds(44, 108, 13, 14), text("B")
 label bounds(6, 56, 32, 12), text("Level"), fontcolour(152, 165, 171, 255) fontcolour(152, 165, 171, 255)
-button bounds(46, 4, 20, 15), , channel("NoiseAct"), text("On", "On"), colour:1(90, 185, 87, 255)
+button bounds(46, 5, 20, 11), , channel("NoiseAct"), text("On", "On"), colour:1(90, 185, 87, 255)
 rslider bounds(7, 26, 29, 29), channel("NoiseLevel"),  range(0, 1, 0, 1, 0.01),imgfile("Background", "SVG\knob4back.svg") increment(0.01)
 vslider bounds(35, 36, 31, 79), channel("NoisePanner"), identchannel("NOISE_PAN_ID"), range(0, 1, 0.5, 1, 0.001), colour(70, 30, 0, 255), trackercolour(210, 180, 140, 255), textcolour(255, 255, 255, 255) value(0.5)
 }
@@ -2760,9 +2760,9 @@ instr 100 ; Instrumento de control y apariencia
      kAddAct          chnget   "AddAct"
      
      ; Modulo principal
+     kMainPresets init 1
+     SMainPresets chnget "MainPresets"
      
-     kMainPresets    chnget    "MainPresets"
-    
     ;------------------------- CONTROL APARIENCIA MODULADOR -------------------------
     
     ; Modulacion en amplitud
@@ -3559,13 +3559,21 @@ instr 100 ; Instrumento de control y apariencia
         
         chnset		"tablenumber(100)","OSC1Shape_ID"
         chnset kWTcontrol1+0.0000000000000001, "WTcontrol1"
-        
-        ShapeOsc1Above  sprintfk "OSC1_WAVE%d_ID", kOsc1Wave+1
-        ShapeOsc1Under  sprintfk "OSC1_WAVE%d_ID", kOsc1Wave-1
+
+        chnset  "visible(0)", "OSC1_WAVE1_ID"
+        chnset  "visible(0)", "OSC1_WAVE2_ID"
+        chnset  "visible(0)", "OSC1_WAVE3_ID"
+        chnset  "visible(0)", "OSC1_WAVE4_ID"
+        chnset  "visible(0)", "OSC1_WAVE5_ID"
+        chnset  "visible(0)", "OSC1_WAVE6_ID"
+        chnset  "visible(0)", "OSC1_WAVE7_ID"
+        chnset  "visible(0)", "OSC1_WAVE8_ID"
+        chnset  "visible(0)", "OSC1_WAVE9_ID"
+        chnset  "visible(0)", "OSC1_WAVE10_ID"
+        chnset  "visible(0)", "OSC1_WAVE11_ID"
+        chnset  "visible(0)", "OSC1_WAVE12_ID"
         ShapeOsc1 sprintfk "OSC1_WAVE%d_ID", kOsc1Wave
         chnset  "visible(1)", ShapeOsc1
-        chnset  "visible(0)", ShapeOsc1Above
-        chnset  "visible(0)", ShapeOsc1Under
         
     rireturn
     endif
@@ -3611,13 +3619,21 @@ instr 100 ; Instrumento de control y apariencia
 
         chnset		"tablenumber(100)","OSC2Shape_ID"
         chnset kWTcontrol2+0.0000000000000001, "WTcontrol2"
-        
-        SLightOsc2Above  sprintfk "OSC2_WAVE%d_ID", kOsc2Wave+1
-        SLightOsc2Under  sprintfk "OSC2_WAVE%d_ID", kOsc2Wave-1
+
+        chnset  "visible(0)", "OSC2_WAVE1_ID"
+        chnset  "visible(0)", "OSC2_WAVE2_ID"
+        chnset  "visible(0)", "OSC2_WAVE3_ID"
+        chnset  "visible(0)", "OSC2_WAVE4_ID"
+        chnset  "visible(0)", "OSC2_WAVE5_ID"
+        chnset  "visible(0)", "OSC2_WAVE6_ID"
+        chnset  "visible(0)", "OSC2_WAVE7_ID"
+        chnset  "visible(0)", "OSC2_WAVE8_ID"
+        chnset  "visible(0)", "OSC2_WAVE9_ID"
+        chnset  "visible(0)", "OSC2_WAVE10_ID"
+        chnset  "visible(0)", "OSC2_WAVE11_ID"
+        chnset  "visible(0)", "OSC2_WAVE12_ID"
         SLightOsc2 sprintfk "OSC2_WAVE%d_ID", kOsc2Wave
         chnset  "visible(1)", SLightOsc2
-        chnset  "visible(0)", SLightOsc2Above
-        chnset  "visible(0)", SLightOsc2Under
         
     rireturn
     endif
@@ -3663,13 +3679,21 @@ instr 100 ; Instrumento de control y apariencia
         
         chnset		"tablenumber(100)","OSC3Shape_ID"
         chnset kWTcontrol3+0.0000000000000001, "WTcontrol3"
-        
-        SLightOsc3Above  sprintfk "OSC3_WAVE%d_ID", kOsc3Wave+1
-        SLightOsc3Under  sprintfk "OSC3_WAVE%d_ID", kOsc3Wave-1
+
+        chnset  "visible(0)", "OSC3_WAVE1_ID"
+        chnset  "visible(0)", "OSC3_WAVE2_ID"
+        chnset  "visible(0)", "OSC3_WAVE3_ID"
+        chnset  "visible(0)", "OSC3_WAVE4_ID"
+        chnset  "visible(0)", "OSC3_WAVE5_ID"
+        chnset  "visible(0)", "OSC3_WAVE6_ID"
+        chnset  "visible(0)", "OSC3_WAVE7_ID"
+        chnset  "visible(0)", "OSC3_WAVE8_ID"
+        chnset  "visible(0)", "OSC3_WAVE9_ID"
+        chnset  "visible(0)", "OSC3_WAVE10_ID"
+        chnset  "visible(0)", "OSC3_WAVE11_ID"
+        chnset  "visible(0)", "OSC3_WAVE12_ID"
         SLightOsc3 sprintfk "OSC3_WAVE%d_ID", kOsc3Wave
         chnset  "visible(1)", SLightOsc3
-        chnset  "visible(0)", SLightOsc3Above
-        chnset  "visible(0)", SLightOsc3Under
         
     rireturn
     endif
@@ -3717,12 +3741,20 @@ instr 100 ; Instrumento de control y apariencia
         chnset		"tablenumber(100)","WTOSC1_Shape_ID"
         chnset kWTcontrol1-0.0000000000000001, "WTcontrol1"
         
-        SLightWTOsc1Above  sprintfk "WTOSC1_WAVE%d_ID", kWTOsc1Wave+1
-        SLightWTOsc1Under  sprintfk "WTOSC1_WAVE%d_ID", kWTOsc1Wave-1
+        chnset  "visible(0)", "WTOSC1_WAVE1_ID"
+        chnset  "visible(0)", "WTOSC1_WAVE2_ID"
+        chnset  "visible(0)", "WTOSC1_WAVE3_ID"
+        chnset  "visible(0)", "WTOSC1_WAVE4_ID"
+        chnset  "visible(0)", "WTOSC1_WAVE5_ID"
+        chnset  "visible(0)", "WTOSC1_WAVE6_ID"
+        chnset  "visible(0)", "WTOSC1_WAVE7_ID"
+        chnset  "visible(0)", "WTOSC1_WAVE8_ID"
+        chnset  "visible(0)", "WTOSC1_WAVE9_ID"
+        chnset  "visible(0)", "WTOSC1_WAVE10_ID"
+        chnset  "visible(0)", "WTOSC1_WAVE11_ID"
+        chnset  "visible(0)", "WTOSC1_WAVE12_ID"
         SLightWTOsc1 sprintfk "WTOSC1_WAVE%d_ID", kWTOsc1Wave
         chnset  "visible(1)", SLightWTOsc1
-        chnset  "visible(0)", SLightWTOsc1Above
-        chnset  "visible(0)", SLightWTOsc1Under
         
     rireturn
     endif
@@ -3767,13 +3799,21 @@ instr 100 ; Instrumento de control y apariencia
         tablew kwt2ft,1,202
         chnset		"tablenumber(100)","WTOSC2_Shape_ID"
         chnset kWTcontrol2-0.0000000000000001, "WTcontrol2"
-        
-        SLightWTOsc2Above  sprintfk "WTOSC2_WAVE%d_ID", kWTOsc2Wave+1
-        SLightWTOsc2Under  sprintfk "WTOSC2_WAVE%d_ID", kWTOsc2Wave-1
+
+        chnset  "visible(0)", "WTOSC2_WAVE1_ID"
+        chnset  "visible(0)", "WTOSC2_WAVE2_ID"
+        chnset  "visible(0)", "WTOSC2_WAVE3_ID"
+        chnset  "visible(0)", "WTOSC2_WAVE4_ID"
+        chnset  "visible(0)", "WTOSC2_WAVE5_ID"
+        chnset  "visible(0)", "WTOSC2_WAVE6_ID"
+        chnset  "visible(0)", "WTOSC2_WAVE7_ID"
+        chnset  "visible(0)", "WTOSC2_WAVE8_ID"
+        chnset  "visible(0)", "WTOSC2_WAVE9_ID"
+        chnset  "visible(0)", "WTOSC2_WAVE10_ID"
+        chnset  "visible(0)", "WTOSC2_WAVE11_ID"
+        chnset  "visible(0)", "WTOSC2_WAVE12_ID"
         SLightWTOsc2 sprintfk "WTOSC2_WAVE%d_ID", kWTOsc2Wave
         chnset  "visible(1)", SLightWTOsc2
-        chnset  "visible(0)", SLightWTOsc2Above
-        chnset  "visible(0)", SLightWTOsc2Under
         
     rireturn
     endif
@@ -3819,75 +3859,21 @@ instr 100 ; Instrumento de control y apariencia
         chnset		"tablenumber(100)","WTOSC3_Shape_ID"
         chnset kWTcontrol3-0.0000000000000001, "WTcontrol3"
         
-        SLightWTOsc3Above  sprintfk "WTOSC3_WAVE%d_ID", kWTOsc3Wave+1
-        SLightWTOsc3Under  sprintfk "WTOSC3_WAVE%d_ID", kWTOsc3Wave-1
+        chnset  "visible(0)", "WTOSC3_WAVE1_ID"
+        chnset  "visible(0)", "WTOSC3_WAVE2_ID"
+        chnset  "visible(0)", "WTOSC3_WAVE3_ID"
+        chnset  "visible(0)", "WTOSC3_WAVE4_ID"
+        chnset  "visible(0)", "WTOSC3_WAVE5_ID"
+        chnset  "visible(0)", "WTOSC3_WAVE6_ID"
+        chnset  "visible(0)", "WTOSC3_WAVE7_ID"
+        chnset  "visible(0)", "WTOSC3_WAVE8_ID"
+        chnset  "visible(0)", "WTOSC3_WAVE9_ID"
+        chnset  "visible(0)", "WTOSC3_WAVE10_ID"
+        chnset  "visible(0)", "WTOSC3_WAVE11_ID"
+        chnset  "visible(0)", "WTOSC3_WAVE12_ID"
         SLightWTOsc3 sprintfk "WTOSC3_WAVE%d_ID", kWTOsc3Wave
         chnset  "visible(1)", SLightWTOsc3
-        chnset  "visible(0)", SLightWTOsc3Above
-        chnset  "visible(0)", SLightWTOsc3Under
         
-    rireturn
-    endif
-    
-    ; Reseteo de osciladores con cambio de preset
-    
-    if changed(kMainPresets)==1 then
-    reinit RESET_VISUAL
-    RESET_VISUAL:
-        
-        chnset  "visible(0)", "OSC1_WAVE1_ID"
-        chnset  "visible(0)", "OSC1_WAVE2_ID"
-        chnset  "visible(0)", "OSC1_WAVE3_ID"
-        chnset  "visible(0)", "OSC1_WAVE4_ID"
-        chnset  "visible(0)", "OSC1_WAVE5_ID"
-        chnset  "visible(0)", "OSC1_WAVE6_ID"
-        chnset  "visible(0)", "OSC1_WAVE7_ID"
-        chnset  "visible(0)", "OSC1_WAVE8_ID"
-        chnset  "visible(0)", "OSC1_WAVE9_ID"
-        chnset  "visible(0)", "OSC1_WAVE10_ID"
-        chnset  "visible(0)", "OSC1_WAVE11_ID"
-        chnset  "visible(0)", "OSC1_WAVE12_ID"
-        
-        ShapeOsc1 sprintfk "OSC1_WAVE%d_ID", kOsc1Wave
-        ;printks "kOsc1Wave:%f", 0.5 , kOsc1Wave
-        chnset  "visible(1)", ShapeOsc1
-        
-        chnset  "visible(0)", "OSC2_WAVE1_ID"
-        chnset  "visible(0)", "OSC2_WAVE2_ID"
-        chnset  "visible(0)", "OSC2_WAVE3_ID"
-        chnset  "visible(0)", "OSC2_WAVE4_ID"
-        chnset  "visible(0)", "OSC2_WAVE5_ID"
-        chnset  "visible(0)", "OSC2_WAVE6_ID"
-        chnset  "visible(0)", "OSC2_WAVE7_ID"
-        chnset  "visible(0)", "OSC2_WAVE8_ID"
-        chnset  "visible(0)", "OSC2_WAVE9_ID"
-        chnset  "visible(0)", "OSC2_WAVE10_ID"
-        chnset  "visible(0)", "OSC2_WAVE11_ID"
-        chnset  "visible(0)", "OSC2_WAVE12_ID"
-        
-        ShapeOsc2 sprintfk "OSC2_WAVE%d_ID", kOsc2Wave
-        chnset  "visible(1)", ShapeOsc2
-        
-        chnset  "visible(0)", "OSC3_WAVE1_ID"
-        chnset  "visible(0)", "OSC3_WAVE2_ID"
-        chnset  "visible(0)", "OSC3_WAVE3_ID"
-        chnset  "visible(0)", "OSC3_WAVE4_ID"
-        chnset  "visible(0)", "OSC3_WAVE5_ID"
-        chnset  "visible(0)", "OSC3_WAVE6_ID"
-        chnset  "visible(0)", "OSC3_WAVE7_ID"
-        chnset  "visible(0)", "OSC3_WAVE8_ID"
-        chnset  "visible(0)", "OSC3_WAVE9_ID"
-        chnset  "visible(0)", "OSC3_WAVE10_ID"
-        chnset  "visible(0)", "OSC3_WAVE11_ID"
-        chnset  "visible(0)", "OSC3_WAVE12_ID"
-        
-        ShapeOsc3 sprintfk "OSC3_WAVE%d_ID", kOsc3Wave
-        chnset  "visible(1)", ShapeOsc3
-        
-        chnset kWTcontrol1-0.0000000000000001, "WTcontrol1"
-        chnset kWTcontrol2-0.0000000000000001, "WTcontrol2"
-        chnset kWTcontrol3-0.0000000000000001, "WTcontrol3"
-
     rireturn
     endif
     
